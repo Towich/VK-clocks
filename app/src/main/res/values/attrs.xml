@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockView">
+        <attr name="hours" format="integer" />
+        <attr name="minutes" format="integer" />
+        <attr name="seconds" format="integer" />
+        <attr name="clock_elements_color" format="color" />
+        <attr name="second_clock_hand_color" format="color" />
+        <attr name="background_clock_color" format="color" />
+        <attr name="border_clock_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+</resources>

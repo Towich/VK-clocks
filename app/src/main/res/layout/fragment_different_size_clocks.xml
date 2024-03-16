@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:clock="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.DifferentSizeClocksFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            android:gravity="center">
+
+            <com.towich.vk_test_2.ui.view.ClockView
+                android:id="@+id/clockView1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="4"
+                clock:background_clock_color="@color/brown"
+                clock:border_clock_color="@color/brown"
+                clock:clock_elements_color="@color/yellow"
+                clock:second_clock_hand_color="@color/bright_red" />
+
+            <com.towich.vk_test_2.ui.view.ClockView
+                android:id="@+id/clockView2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="3"
+                clock:background_clock_color="@color/brown"
+                clock:border_clock_color="@color/brown"
+                clock:clock_elements_color="@color/yellow"
+                clock:second_clock_hand_color="@color/bright_red" />
+
+            <com.towich.vk_test_2.ui.view.ClockView
+                android:id="@+id/clockView3"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="2"
+                clock:background_clock_color="@color/brown"
+                clock:border_clock_color="@color/brown"
+                clock:clock_elements_color="@color/yellow"
+                clock:second_clock_hand_color="@color/bright_red" />
+
+            <com.towich.vk_test_2.ui.view.ClockView
+                android:id="@+id/clockView4"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                clock:background_clock_color="@color/brown"
+                clock:border_clock_color="@color/brown"
+                clock:clock_elements_color="@color/yellow"
+                clock:second_clock_hand_color="@color/bright_red" />
+
+        </LinearLayout>
+        <com.towich.vk_test_2.ui.view.ClockView
+            android:id="@+id/clockView5"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            clock:background_clock_color="@color/brown"
+            clock:border_clock_color="@color/brown"
+            clock:clock_elements_color="@color/yellow"
+            clock:second_clock_hand_color="@color/bright_red" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_backwards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_margin="16dp"
+        android:scaleX="-1"
+        android:src="@drawable/right_arrow"
+        app:backgroundTint="?attr/colorPrimary"
+        app:tint="@color/bright_red" />
+
+</FrameLayout>

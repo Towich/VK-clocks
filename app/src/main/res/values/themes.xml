@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.VKtest2" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="android:colorBackground">@color/white_dark</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white_dark</item>
+        <item name="android:navigationBarColor">@color/white_dark</item>
+    </style>
+
+    <style name="Theme.VKtest2" parent="Base.Theme.VKtest2" />
+</resources>

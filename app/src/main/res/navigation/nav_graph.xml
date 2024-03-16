@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fullScreenClockFragment">
+
+    <fragment
+        android:id="@+id/fullScreenClockFragment"
+        android:name="com.towich.vk_test_2.ui.fragment.FullScreenClockFragment"
+        android:label="fragment_full_screen_clock"
+        tools:layout="@layout/fragment_full_screen_clock" >
+        <action
+            android:id="@+id/action_fullScreenClockFragment_to_colorfulClocksFragment"
+            app:destination="@id/colorfulClocksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/colorfulClocksFragment"
+        android:name="com.towich.vk_test_2.ui.fragment.ColorfulClocksFragment"
+        android:label="fragment_colorful_clocks"
+        tools:layout="@layout/fragment_colorful_clocks" >
+        <action
+            android:id="@+id/action_colorfulClocksFragment_to_fullScreenClockFragment"
+            app:destination="@id/fullScreenClockFragment" />
+        <action
+            android:id="@+id/action_colorfulClocksFragment_to_differentSizeClocksFragment"
+            app:destination="@id/differentSizeClocksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/differentSizeClocksFragment"
+        android:name="com.towich.vk_test_2.ui.fragment.DifferentSizeClocksFragment"
+        android:label="fragment_different_size_clocks"
+        tools:layout="@layout/fragment_different_size_clocks" >
+        <action
+            android:id="@+id/action_differentSizeClocksFragment_to_colorfulClocksFragment"
+            app:destination="@id/colorfulClocksFragment" />
+    </fragment>
+</navigation>
